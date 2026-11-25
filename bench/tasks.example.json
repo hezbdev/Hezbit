@@ -1,0 +1,36 @@
+{
+  "repo": "H:/path/to/your/repo",
+  "ref": "HEAD",
+  "tasks": [
+    {
+      "id": "small-fix",
+      "kind": "small",
+      "prompt": "Fix: login returns 500 when the email contains non-ASCII characters. Don't change the DB schema.",
+      "setup": "npm ci",
+      "check": "npm test",
+      "allowed": ["src/auth/", "tests/auth/"],
+      "brief": {
+        "type": "FIX",
+        "scope": "src/auth/, tests/auth/",
+        "out": "no DB schema change",
+        "done": ["npm test :: exit 0"],
+        "reply": "diff-only, <=10 lines"
+      }
+    },
+    {
+      "id": "vague-feature",
+      "kind": "vague",
+      "prompt": "Make the export faster.",
+      "setup": "npm ci",
+      "check": "npm test",
+      "allowed": ["src/export/"],
+      "brief": {
+        "type": "CHANGE",
+        "scope": "src/export/",
+        "out": "none",
+        "done": ["npm test :: exit 0"],
+        "reply": "diff-only"
+      }
+    }
+  ]
+}

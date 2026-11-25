@@ -1,0 +1,10 @@
+{
+  "name": "hezbit",
+  "version": "0.4.0",
+  "description": "Keep Claude Code on the goal: a per-task contract, scope and read guards, git-based change tracking, and honest verification.",
+  "author": { "name": "hezbdev" },
+  "homepage": "https://github.com/hezbdev/hezbit",
+  "repository": "https://github.com/hezbdev/hezbit",
+  "license": "MIT",
+  "keywords": ["guardrails", "scope", "verification", "tokens", "workflow"]
+}

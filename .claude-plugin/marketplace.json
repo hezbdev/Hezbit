@@ -1,0 +1,11 @@
+{
+  "name": "hezbit",
+  "owner": { "name": "hezbdev" },
+  "plugins": [
+    {
+      "name": "hezbit",
+      "source": "./",
+      "description": "Keep Claude Code on the goal: a per-task contract, scope and read guards, git-based change tracking, and honest verification."
+    }
+  ]
+}
