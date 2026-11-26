@@ -1,6 +1,8 @@
 <div align="center">
 
-# ✦ Hezbit
+<img src=".claude-plugin/icon.png" alt="Hezbit logo" width="128" height="128">
+
+# Hezbit
 
 ### Keep Claude Code pointed at the goal.
 
